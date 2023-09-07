@@ -15,7 +15,28 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $data = [
-        'message'=> 'hello blade from routes function '
+        'message'=> 'hello blade from Home page '
     ];
     return view('home', $data);
-});
+})->name('home');
+
+Route::get('/info', function () {
+    $data = [
+        'message'=> 'hello blade from Info page '
+    ];
+    return view('about', $data);
+})->name('about');
+
+Route::get('/contatti', function () {
+    $data = [
+        'message'=> 'hello blade from contact page '
+    ];
+    return view('contact', $data);
+})->name('contact');
+
+Route::get('/prodotti', function () {
+    $data = [
+        'message'=> 'hello blade from products page '
+    ];
+    return view('products', $data);
+})->name('products');

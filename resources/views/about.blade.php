@@ -11,11 +11,12 @@
   <header>
     <nav class="flex justify-between bg-gray-500 text-white py-4 px-2 ">
       <div class="logoHome uppercase font-bold">
-        <a href="{{ route('home') }}">Home</a>
+        <a href="{{ route('about') }}">Info</a>
+        
       </div>
       <ul class="flex gap-2">
         <li class="underline">
-          <a href="{{ route('about') }}">Info</a>
+          <a href="{{ route('home') }}">Home</a>
         </li>
         <li class="underline">
           <a href="{{ route('products') }}">Prodotti</a>
