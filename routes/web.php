@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data = [
+        'message'=> 'hello blade from routes function '
+    ];
+    return view('home', $data);
 });
